@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previsão do Tempo</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap');
+    </style>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <h1>Previsão do Tempo</h1>
+            <div class="weather-form">
+                <input 
+                    type="text" 
+                    id="city-input" 
+                    placeholder="Digite o nome da cidade" 
+                    autocomplete="off" 
+                    aria-label="Campo para inserir o nome da cidade" 
+                />
+                <button id="search-button">Buscar</button>
+            </div>
+            <div id="weather-info" class="hidden">
+                <h2 id="city-name"></h2>
+                <p id="temperature"></p>
+                <p id="description"></p>
+                <p id="location-details"></p>
+                <img id="weather-icon" alt="Ícone do clima" />
+            </div>
+            <div id="error-message" class="hidden"></div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 - Vítor Almeida Machado - Todos os direitos reservados</p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
